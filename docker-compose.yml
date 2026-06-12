@@ -1,0 +1,12 @@
+services:
+  ai-memory:
+    build: .
+    container_name: ai-memory-server
+    restart: always
+    ports:
+      - "3100:3100"
+    env_file:
+      - .env
+    volumes:
+      - ./.aimemory:/app/.aimemory
+      - ./skills:/app/skills

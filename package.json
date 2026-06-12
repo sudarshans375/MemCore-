@@ -1,0 +1,47 @@
+{
+  "name": "memcore",
+  "version": "2.0.0",
+  "description": "Universal AI Memory System — Your AI Never Forgets",
+  "main": "ai-memory.js",
+  "bin": {
+    "aimemory": "aimemory.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudarshans375/MemCore-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sudarshans375/MemCore-/issues"
+  },
+  "homepage": "https://github.com/sudarshans375/MemCore-#readme",
+  "author": "VikasRajput-1",
+  "license": "MIT",
+  "keywords": [
+    "ai-memory",
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "vector-search",
+    "rag",
+    "claude",
+    "cursor",
+    "codebuff"
+  ],
+  "scripts": {
+    "memory": "node ai-memory.js",
+    "memory:start": "node ai-memory.js",
+    "memory:shutdown": "node ai-memory.js shutdown",
+    "memory:status": "node ai-memory.js status",
+    "memory:history": "node ai-memory.js history",
+    "memory:decisions": "node ai-memory.js decisions",
+    "memory:tasks": "node ai-memory.js tasks",
+    "memory:summary": "node ai-memory.js summary",
+    "memory:init": "node ai-memory.js init",
+    "start": "node mcp-server.js --http 3100"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "mongodb": "^6.21.0"
+  }
+}

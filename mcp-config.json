@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ai-memory": {
+      "command": "node",
+      "args": [
+        "<PATH_TO_MEMCORE>/mcp-server.js"
+      ],
+      "env": {
+        "AI_MEMORY_MONGO_URI": "${MONGO_URI}"
+      }
+    }
+  }
+}

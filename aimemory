@@ -1,0 +1,3 @@
+#!/bin/bash
+# AI Memory System v2.0 - Global CLI Wrapper
+cd "$(dirname "$0")" && node ai-memory.js "$@"
